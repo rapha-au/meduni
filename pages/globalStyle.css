@@ -1,0 +1,326 @@
+
+*{
+    margin: 0;
+}
+
+body{
+	background-color: whitesmoke;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+p{
+	padding:1em;
+}
+
+header{
+	width:100%;
+	min-width:100%;
+	background-color: rgb(68, 201, 123);
+	text-align: center;
+	padding: 1em;
+	margin:0px;
+}
+
+footer{
+	color:white;
+	width:100%;
+	min-width:100%;
+	background-color: rgb(44, 44, 44);
+	text-align: center;
+	padding: 1em;
+	margin:0px;
+}
+
+h2{
+	color:rgb(90, 90, 90);
+}
+
+.link-element{
+	padding:1em;
+	textDecoration:"none";
+	text-decoration: "none";
+	color: white;
+}
+a:visited{
+	textDecoration:"none";
+	text-decoration: "none";
+	color: white;
+}
+
+a:hover{
+	textDecoration:"underline";
+	color: white;
+}
+
+.block-box{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.block:nth-child(odd){
+	display:flexbox;
+	background-color: rgb(206, 206, 206);
+	flex-wrap: nowrap;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	padding:7em;
+	padding-left:1em;
+	word-wrap: break-word;
+}
+
+.block:nth-child(even){
+	display:flexbox;
+	background-color: white;
+	flex-wrap: nowrap;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	padding:7em;
+	padding-right:1em;
+	word-wrap: break-word;
+}
+
+#medicSearch{
+
+}
+
+
+/*CSS Grid*/
+/*Homepage block grid*/
+.home-grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	/*gap: 10px;*/
+	/*padding: 10px;*/
+	align-items: center;
+  }
+  
+ /* .home-grid-container > div {
+	overflow-wrap: break-word;
+	text-align: center;
+	padding: 10px 0;
+  }*/
+  
+  .statement{
+	align-items: center;
+	font-size:3em;
+	color:green;
+	width: 100%;
+	padding:1em;
+  }
+
+  .healthSymbol{
+	grid-column-start: "2";
+	grid-column-end: "2";
+	left:50%
+  }
+  
+  .statementDesc{
+	align-items: center;
+	font-size:1.5em;
+	color:"green";
+	width: 75%;
+	padding:1em;
+  }
+
+/*Images flexbox*/
+.overflow-box{
+	flex:1;
+	display:flex;
+
+}
+
+.image-box{
+	display:flex;
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+
+/*Homepage Table*/
+.table-grid{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	overflow: auto;
+	height: 15em;
+}
+
+#medic-table{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	text-align:center;
+	padding-left:5em;
+}
+
+#medics {
+
+}
+  
+  #medics td, th {
+	border: 2px solid #ddd;
+	padding: 8px;
+  }
+  
+  #medics tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #medics tr:hover {background-color: #ddd;}
+  
+  #medics th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: green;
+	color: white;
+  }
+
+
+/*Medic View Grid Container*/
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
+	padding: 10px;
+  }
+  
+  .grid-container > div {
+	background-color: whitesmoke;
+	text-align: center;
+	padding: 20px 0;
+  }
+  
+  .medicPhoto{
+	grid-row-start: 1;
+	grid-row-end: 4;
+	grid-column-start:1;
+	grid-column-end:2;
+  }
+  
+  .medicName{
+		font-size: 2em;
+		grid-column-start:2;
+		grid-column-end:5;
+		grid-column-start:2;
+		grid-column-end:2;
+  }
+
+  .medicSpecialty{
+		font-size: 2em;
+		grid-column-start:2;
+		grid-column-end:2;
+  }
+  .medicDescription{
+		font-size: "1em";
+		grid-column-start:2;
+		grid-column-end:2;
+		max-width: 50%;
+		text-align: center;
+		margin-left:15em;
+  }
+
+  .medicAddress{
+	font-size: "1em";
+	grid-column-start:2;
+	grid-column-end:5;
+	grid-column-start:2;
+	grid-column-end:2;
+  }
+
+.schedule-btn{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start:1;
+	grid-column-end:1;
+
+	color:white;
+	font-size:16px;
+	background-color: #04AA6D;
+	border-radius: 5px;
+	text-align: center;
+	padding:16px;
+	margin:16px;
+	border:none;
+}
+
+.schedule-btn:hover{
+	background-color: #03794d;
+}
+
+.visualize-btn{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start:1;
+	grid-column-end:1;
+
+	color:white;
+	font-size: 16px;
+	background-color: #dbd13b;
+	border-radius: 5px;
+	text-align: center;
+	padding:16px;
+	margin:16px;
+	border:none;
+}
+
+.visualize-btn:hover{
+	background-color: rgb(172, 164, 53);
+}
+
+
+#scheduleModal{
+
+}
+
+.modal{
+	z-index:3;
+	display:none;
+	padding-top:100px;
+	position:fixed;
+	left:25%;
+	top:10%;
+	width: 50%;
+	height: 75%;
+	max-width:50%;
+	max-height:75%;
+	overflow:auto;
+	background-color:rgb(145, 145, 145,);
+	background-color:rgba(145, 145, 145, 0.4);
+	border-width: 5px;
+	border-style:solid;
+}
+
+#medicTimeModal{
+
+}
+
+.modal-item{
+	margin:1em;
+}
+
+#visualize-table{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	text-align:center;
+	padding-left:5em;
+}
+
+#visualize-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+#visualize-table tr:hover {background-color: #ddd;}
+  
+#visualize-table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: rgb(68, 201, 123);
+	color: white;
+}
